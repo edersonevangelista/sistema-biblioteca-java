@@ -15,4 +15,11 @@ public class LivroFisico extends Livro {
     public void setNumeroPaginas(int numeroPaginas) {
         this.numeroPaginas = numeroPaginas;
     }
+
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Páginas: " + getNumeroPaginas());
+    }
 }

@@ -12,36 +12,28 @@ public class Livro {
     }
     //Getters
     public String getTitulo() {
-
         return titulo;
     }
     public String getAutor() {
-
         return autor;
     }
     public int getAnoDePublicacao() {
-
         return anoDePublicacao;
     }
     public boolean isDisponivel() {
-
         return disponivel;
     }
     //Setters
     public void setTitulo(String titulo){
-
         this.titulo = titulo;
     }
     public void setAutor(String autor) {
-
         this.autor = autor;
     }
     public void setAnoDePublicacao(int anoDePublicacao) {
-
         this.anoDePublicacao = anoDePublicacao;
     }
     public void setDisponivel( boolean disponivel) {
-
         this.disponivel = disponivel;
     }
 
@@ -61,4 +53,9 @@ public class Livro {
         }
     }
 
-}
+    public void exibirInformacoes() {
+            System.out.println("Título: " + getTitulo());
+            System.out.println("Autor: " + getAutor());
+            System.out.println("Ano: " + getAnoDePublicacao());
+        }
+    }

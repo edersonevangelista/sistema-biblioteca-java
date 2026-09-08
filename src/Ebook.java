@@ -12,7 +12,12 @@ public class Ebook extends Livro{
     }
     //Setter
     public void setTamanhoArquivo(double tamanhoArquivo) {
-
         this.tamanhoArquivo = tamanhoArquivo;
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Tamanho do arquivo: " + getTamanhoArquivo() + "MB");
     }
 }
