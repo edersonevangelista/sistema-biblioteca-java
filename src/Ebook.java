@@ -12,6 +12,7 @@ public class Ebook extends Livro{
     }
     //Setter
     public void setTamanhoArquivo(double tamanhoArquivo) {
+
         this.tamanhoArquivo = tamanhoArquivo;
     }
 }
