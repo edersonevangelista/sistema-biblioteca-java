@@ -47,10 +47,18 @@ public class Livro {
 
     //metodo emprestar/devolver
     public void emprestar() {
-        disponivel = false;
+        if (disponivel) {
+            disponivel = false;
+        } else {
+            System.out.println("Livro não está disponível para empréstimo.");
+        }
     }
     public void devolver() {
-        disponivel = true;
+        if (!disponivel) {
+            disponivel = true;
+        } else {
+            System.out.println("O livro já está disponível.");
+        }
     }
 
 }
