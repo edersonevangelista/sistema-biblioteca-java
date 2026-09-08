@@ -9,7 +9,5 @@ public class Main {
         livro.devolver();
         System.out.println(livro.isDisponivel());
 
-
-
     }
 }
